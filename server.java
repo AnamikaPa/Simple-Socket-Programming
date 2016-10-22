@@ -17,8 +17,10 @@ class server
 			
 			Scanner sc = new Scanner(ss.getInputStream());
 			int num = sc.nextInt();
+			System.out.println("Number send by Client: "+ num);
 			
 			int temp = num*2;
+			System.out.println("Number send to Client after manipulation: "+temp);
 			
 			PrintStream p = new PrintStream(ss.getOutputStream());
 			p.println(temp);
